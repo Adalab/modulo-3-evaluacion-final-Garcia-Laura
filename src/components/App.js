@@ -1,9 +1,9 @@
 // Fichero src/components/App.js
 import { useEffect, useState } from "react";
-import '../styles/App.scss';
 import getCharacters from "../services/api";
 import CharactersList from "./CharactersList";
 import FiltersName from "./FiltersName";
+import Header from "./Header";
 
 
 // import {Route, Routes} from 'react-router-dom'
@@ -17,7 +17,6 @@ const [search, setSearch] = useState ("");
 // UseEffect;
   useEffect(() => {
     getCharacters().then((cleanData) => {
-      console.log(cleanData);
       setAllCharacters(cleanData);
     });
   }, []);
@@ -32,17 +31,24 @@ const [search, setSearch] = useState ("");
 
   // Funciones de renderizado
 const listCharacters = allCharacter
-.filter((eachCharacters) => eachCharacters.name.toLowerCase().includes(search.toLowerCase()))
+.filter((eachCharacters) => {
+
+if (eachCharacters.name.toLowerCase().includes(search.toLowerCase())){
+  return true;
+}
+else {
+  return false;
+}
+});
 
 
   return (
    <>
-   <header>
-   <h1>Rick and Morty</h1>
-   </header>
-   <main>
+  <Header/>
+   <main className="main">
+   <FiltersName handleSubmit = {handleSubmit} search={search} setFilterName={setFilterName}/>
     <CharactersList listCharacters={listCharacters} />
-    <FiltersName handleSubmit = {handleSubmit} search={search} setFilterName={setFilterName}/>
+    
    </main>
    </>
   );

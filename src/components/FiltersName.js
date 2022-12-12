@@ -1,3 +1,4 @@
+import '../styles/layout/FiltersName.scss';
 const FiltersName = (props) => {
     const handleSearch = (ev) => {
         props.setFilterName(ev.target.value);
@@ -6,9 +7,9 @@ const FiltersName = (props) => {
     return (
 
 
-          <form onSubmit={props.handleSubmit}>
-            <div>
-            <label htmlFor="search"> </label>
+          <form  onSubmit={props.handleSubmit}>
+            <div className='form'>
+            <label > </label>
           <input
             className="search"
             autoComplete="off"

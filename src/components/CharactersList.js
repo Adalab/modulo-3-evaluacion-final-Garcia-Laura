@@ -1,3 +1,4 @@
+import '../styles/layout/CharactersList.scss';
 import CharactersItem from "./CharactersItem";
 
 const CharactersList = (props) =>{
@@ -6,7 +7,7 @@ const CharactersList = (props) =>{
     })
     return (
         
-            <ul> {htmlCharacters} </ul>
+            <ul className='list'> {htmlCharacters} </ul>
        
     );
 }
