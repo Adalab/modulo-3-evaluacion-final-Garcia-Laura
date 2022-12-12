@@ -4,7 +4,7 @@ const CharactersItem = (props) => {
             <article>
                 <img src={props.obj.image} alt={props.obj.name} />
                 <h2> {props.obj.name} </h2>
-                <p> {props.obj.especies}</p>
+                <p> {props.obj.species}</p>
                 
             </article>
         </li>

@@ -8,10 +8,21 @@ const getCharacters = () =>  {
                 id: obj.id,
                 image: obj.image,
                 name: obj.name,
-                species: obj.species
+                species: obj.species,
+                planet: obj.origin.name,
+                episodes: obj.episode.length,
+                status:obj.status
             };
         });
-        return cleanData;
+        return cleanData.sort(function (a, b){
+            if (a.name > b.name) {
+                return 1;
+            }
+            if (a.name < b.name) {
+                return -1;
+            }
+            return 0;
+        });
     });
 
 };

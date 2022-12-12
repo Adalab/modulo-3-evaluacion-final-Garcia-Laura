@@ -1,6 +1,7 @@
 const FiltersName = (props) => {
     const handleSearch = (ev) => {
         props.setFilterName(ev.target.value);
+        
       };
     return (
 
