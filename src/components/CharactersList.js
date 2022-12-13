@@ -5,17 +5,16 @@ const CharactersList = (props) =>{
     const htmlCharacters = props.listCharacters.map((obj) => {
         return <CharactersItem key={obj.id} obj={obj} />
     })
-    return (
-       
-            <ul className='list'> {htmlCharacters} </ul>
-     
-            // if (eachCharacters.name.toLowerCase().includes(search.toLowerCase())){
-            //     return true;
-            //   }
-            //   else {
-            //     return false;
-            //   }
-            //   });
-    );
+    if (props.listCharacters.length === 0){
+     return (
+        <p> Personaje no encontrado </p>
+     )
+    } else {
+        return (
+            
+             <ul className='list'> {htmlCharacters} </ul>
+        )
+    }
+    
 }
 export default CharactersList;
