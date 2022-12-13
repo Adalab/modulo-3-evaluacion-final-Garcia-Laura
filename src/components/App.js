@@ -55,7 +55,7 @@ const findCharacters = (id) =>{
     element={
       <>
       <FiltersName handleSubmit = {handleSubmit} search={search} setFilterName={setFilterName}/>
-    <CharactersList listCharacters={listCharacters} />
+    <CharactersList listCharacters={listCharacters}  search={search} />
       </>
     }
        ></Route>
