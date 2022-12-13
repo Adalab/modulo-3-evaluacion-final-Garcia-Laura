@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const CharactersDetails = (props) => {
     const params = useParams ();
@@ -7,6 +7,7 @@ const CharactersDetails = (props) => {
     console.log(characterFound)
     return (
         <>
+         <Link to="/"> Volver al inicio </Link>
         <h2> Detalles del personaje</h2>
         <article>
         <img src={characterFound.image} alt={characterFound.image} />
@@ -20,10 +21,9 @@ const CharactersDetails = (props) => {
                     <dd> {characterFound.species}</dd>
                     <dt> episodes</dt>
                     <dd> {characterFound.episodes} </dd>
-
-
                 </dl>
         </article>
+       
 
         </>
     )
