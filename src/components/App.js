@@ -31,15 +31,12 @@ const [search, setSearch] = useState ("");
 
   // Funciones de renderizado
 const listCharacters = allCharacter
-.filter((eachCharacters) => {
+.filter((eachCharacters) => 
+ (eachCharacters.name.toLowerCase().includes(search.toLowerCase()))
 
-if (eachCharacters.name.toLowerCase().includes(search.toLowerCase())){
-  return true;
-}
-else {
-  return false;
-}
-});
+);
+
+
 
 // Funciones router
 const findCharacters = (id) =>{

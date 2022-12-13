@@ -6,9 +6,16 @@ const CharactersList = (props) =>{
         return <CharactersItem key={obj.id} obj={obj} />
     })
     return (
-        // condicional para error
-            <ul className='list'> {htmlCharacters} </ul>
        
+            <ul className='list'> {htmlCharacters} </ul>
+     
+            // if (eachCharacters.name.toLowerCase().includes(search.toLowerCase())){
+            //     return true;
+            //   }
+            //   else {
+            //     return false;
+            //   }
+            //   });
     );
 }
 export default CharactersList;
