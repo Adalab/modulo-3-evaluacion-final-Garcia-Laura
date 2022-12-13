@@ -1,11 +1,13 @@
 // Fichero src/components/App.js
 import { useEffect, useState } from "react";
-import {Route, Routes, Link} from 'react-router-dom'
+import {Route, Routes} from 'react-router-dom'
 import getCharacters from "../services/api";
 import CharactersList from "./CharactersList";
 import FiltersName from "./FiltersName";
 import Header from "./Header";
+import Footer from "./Footer";
 import CharactersDetails  from "./CharactersDetails";
+import '../styles/layout/Main.scss';
 
 
 function App() {
@@ -63,6 +65,7 @@ const findCharacters = (id) =>{
     </Routes>
     
    </main>
+   <Footer/>
    </>
   );
 }

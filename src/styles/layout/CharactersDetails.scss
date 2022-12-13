@@ -1,0 +1,50 @@
+.link{
+    color:white;
+    text-decoration: none;
+    text-align: center;
+    left: 32.5%;
+    margin-bottom: 12px;
+    margin-top: 15px;
+    position: relative;
+  
+
+}
+.container{
+    background-color: #13b5d5;;
+    width: 300px;
+    @media (min-width: 768px) {
+        width: 350px;
+      }
+  
+.cont{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    
+}
+.img{
+   height: 200px;
+   width: 250px;
+   margin-left: 25px;
+    @media (min-width: 768px) {
+    height: 300px;
+    width: 260px;
+    margin-left: 50px;
+      }
+}
+}
+.title{
+    font-size: 25px;
+    font-weight: bold;
+    color: white; 
+    text-align: center;
+    padding-top: 5px;
+}
+.bold{
+    font-weight: bold;
+    color: white; 
+}
+.dat{
+    color: white;
+}

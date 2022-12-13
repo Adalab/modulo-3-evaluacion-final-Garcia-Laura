@@ -7,7 +7,7 @@ const CharactersList = (props) =>{
     })
     if (props.listCharacters.length === 0){
      return (
-        <p> { `No hay ningún personaje que coincida con la palabra ${props.search}`} </p>
+        <p className="error"> { `No hay ningún personaje que coincida con la palabra ${props.search}`} </p>
      
      )
     } else {

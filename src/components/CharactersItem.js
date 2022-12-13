@@ -4,12 +4,12 @@ const CharactersItem = (props) => {
     
     
     return (
-        <Link to={`/characters/${props.obj.id}`} >
-        <li>
+        <Link to={`/characters/${props.obj.id}`} className="link" >
+        <li className="list">
             <article className='item'>
                 <img src={props.obj.image} alt={props.obj.name} />
-                <h2> {props.obj.name} </h2>
-                <p> {props.obj.species}</p>
+                <h2 className="obj"> {props.obj.name} </h2>
+                <p className="obj"> {props.obj.species}</p>
                 
             </article>
         </li>
