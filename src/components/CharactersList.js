@@ -6,7 +6,7 @@ const CharactersList = (props) =>{
         return <CharactersItem key={obj.id} obj={obj} />
     })
     return (
-        
+        // condicional para error
             <ul className='list'> {htmlCharacters} </ul>
        
     );
