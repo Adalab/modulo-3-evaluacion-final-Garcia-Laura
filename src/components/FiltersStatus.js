@@ -15,6 +15,7 @@ const FiltersStatus = (props) =>{
             <option value="">Escoge un estado</option>
             <option value="dead">Dead</option>
             <option value="alive"> Alive </option>
+            <option value="unknown"> unknown </option>
             
           </select>
         </form>

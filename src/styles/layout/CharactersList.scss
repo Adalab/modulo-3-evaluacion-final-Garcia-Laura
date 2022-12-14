@@ -3,7 +3,7 @@
   
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 15px;
+    grid-gap: 5px;
    
     
   
@@ -11,12 +11,14 @@
       @media (min-width: 768px) {
         grid-template-columns: 1fr 1fr ;
         margin-top: 25px;
-        margin-right: 80px;
+        position:relative;
+        right: 55px;
+        }
        
         
        
-      }
-      @media (min-width: 100px) {
+      
+      @media (min-width: 1000px) {
         grid-template-columns: 1fr 1fr 1fr;
         margin-top: 25px;
       }
