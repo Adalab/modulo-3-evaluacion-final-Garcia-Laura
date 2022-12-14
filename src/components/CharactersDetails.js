@@ -13,7 +13,7 @@ const CharactersDetails = (props) => {
     <>
                  <Link className="link" to="/"> Volver al inicio </Link>
                  <div className="container">
-                <h2 className="title"> Detalles del personaje {characterFound.name}</h2>
+                <h2 className="title"> Detalles del personaje</h2>
                 <article className="cont">
                 <img src={characterFound.image} className="img" alt={characterFound.image} />
                         <h3 className="dat"> {characterFound.name} </h3>
