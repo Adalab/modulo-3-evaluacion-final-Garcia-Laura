@@ -31,7 +31,7 @@ Para instalar create-react-app usa sudo npm install -g create-react-app. Lo tend
 
 La **finalidad** de este proyecto consiste en:
 - Estructurar el HTML en diferentes componentes.
-- Desarrollar habilidades  y lógica de.
+- Desarrollar habilidades  y lógica.
 - Realizar peticiones a un servidor.
 - Maquetación en SASS.
 - Uso de routes tanto estáticas commoo dinámicas
