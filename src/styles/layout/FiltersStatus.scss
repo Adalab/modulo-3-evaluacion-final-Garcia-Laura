@@ -1,12 +1,17 @@
-@import "../core/Reset";
+
 .form{
     display: flex;
     text-align: center;
     justify-content: center;
+    padding: 10px;
+
+
+    
 }
 .search{
     width: 50%;
     border: 5px solid  solid #13b5d5;
     position: relative;
-    
+    color: white;
+    background-color: black;
 }

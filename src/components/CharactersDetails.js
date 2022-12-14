@@ -36,8 +36,8 @@ const CharactersDetails = (props) => {
         
             return (
                 <>
-                <p> Personaje no encontrado </p>
-                <Link to="/"> Volver al inicio </Link>
+                <p className="error"> Personaje no encontrado </p>
+                <Link to="/" className="link" > Volver al inicio </Link>
             
               </>
             )

@@ -1,16 +1,30 @@
+@import "../core/Reset";
 .link{
     text-decoration: none;
     
 }
-.list{
-   
-}
+
 .item{
-    background-color:  rgba(19, 181, 213, 0.7);
+    background-color:   #13b5d5;
     color: white;
     text-align: center;
-     width: 300px;
+    margin: 30px;
+    width: 150px;
+    @media (min-width: 768px) {
+        width: 300px;
+        
+      
+      }
     
+    
+}
+.img{
+    width: 150px;
+    @media (min-width: 768px) {
+        width: 300px;
+        
+      
+      }
     
 }
 

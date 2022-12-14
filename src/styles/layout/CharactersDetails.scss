@@ -1,3 +1,4 @@
+@import "../core/Reset";
 .link{
     color:white;
     text-decoration: none;
@@ -10,7 +11,7 @@
 
 }
 .container{
-    background-color: #13b5d5;;
+    background-color: #13b5d5;
     width: 300px;
     @media (min-width: 768px) {
         width: 350px;
@@ -18,6 +19,7 @@
   
 .cont{
     display: flex;
+    box-sizing: border-box;
     justify-content: center;
     text-align: center;
     flex-direction: column;
@@ -48,3 +50,9 @@
 .dat{
     color: white;
 }
+.error{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+  }
